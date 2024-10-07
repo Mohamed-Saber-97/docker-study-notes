@@ -2,28 +2,7 @@
 
 * `docker run <image_name>` tells Docker that you want to trigger the sequence (shown in figure 1.1) that installs and runs a program inside a container.
 
-```mermaid
-flowchart LR
-    classDef title fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
-    classDef action fill:#fff,stroke:#333,stroke-width:1px;
-    classDef decision fill:#ffcc00,stroke:#333,stroke-width:2px, color:#000;
-    
-    A(docker run) --> B[Docker looks for the image on this computer]:::action
-    B --> C{Is the image installed?}:::decision
-    C -- No --> D[Docker searches Docker Hub for the image]:::action
-    C -- Yes --> H[Docker creates a new container and starts the program]:::action
-    D --> E{Is it on Docker Hub?}:::decision
-    E -- Yes --> F[Docker downloads the image]:::action
-    E -- No --> X[Error: Image not found!]:::action
-    F --> G[The image layers are installed on this computer]:::action
-    G --> H
-    H --> J(The container is running):::title
-    
-    %% Add styling classes here if needed
-    class A,H title
-    class B,D,E,F,G,J action
-    class C,E decision
-```
+![What happens after runningFigure 1.1 docker run](./images/0.png)
 
 * the running state of a container is directly tied to the state of a single running program inside the container.
 * If a program is running, the container is running. If the program is stopped, the container is stopped. Restarting a container will run the program again.
