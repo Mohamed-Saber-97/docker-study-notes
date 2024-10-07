@@ -32,7 +32,7 @@
 
 ## Getting organized
 
-* At first it seems like this would introduce storage overhead by creating redundant copies of common dependencies such as gcc yet Docker packaging system typically reduces the storage overhead.
+* At first, it seems like this would introduce storage overhead by creating redundant copies of common dependencies such as gcc yet Docker packaging system typically reduces the storage overhead.
 
 ### Dependency relationships of example programs
 

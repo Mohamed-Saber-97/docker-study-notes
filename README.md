@@ -10,7 +10,7 @@ This repository contains comprehensive notes on Docker and Swarms. Feel free to 
 
 1. ### [Welcome To Docker](./Welcome-to-Docker.md)
 
-2. ### Process isolation and environment-independentcomputing
+2. ### Process isolation and environment-independent computing
 
    1. #### [Running software in containers](./Running-software-in-containers.md)
 

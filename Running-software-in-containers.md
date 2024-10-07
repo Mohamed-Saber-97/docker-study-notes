@@ -17,9 +17,9 @@
   * Docker assigns a unique (human-friendly) name to each container it creates. The `--name` flag overrides that process with a known value
   * `nginx:latest` image name
   * `--rm` automatically remove the container as soon as it enters the exited state
-  * `--read-only` so no changes can be applied to the enviroment
+  * `--read-only` so no changes can be applied to the environment
   * `-v` Mounts a writable directory from the host
-* `docker container diff <container_name>` to check what has changed in it's files
+* `docker container diff <container_name>` to check what has changed in its files
 
 ```powershell
 $ docker run --detach --name web nginx:latest
@@ -42,7 +42,7 @@ e9ca720696557cbc5a450fe87cac4502975b7443859df86f265eb323084a7705 # new Unique ID
   * The duration that the container has been running
   * The network ports exposed by the container
   * The name of the container
-* Run `docker ps -a`  To see all thecontainers (including those in the created state)
+* Run `docker ps -a`  To see all the containers (including those in the created state)
 
 ```powershell
 $ docker ps
